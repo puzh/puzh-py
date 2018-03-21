@@ -1,4 +1,3 @@
-import requests
 import threading
 
 
@@ -6,6 +5,8 @@ __version__ = '1.0.1'
 
 
 def it(*objects, token='secret', silent=False, sep=' '):
+    import requests
+    
     if type(token) is not str or token is None:
         raise TypeError('token must be a string, not %r' % sep.__class__.__name__)
     if type(silent) is not bool:

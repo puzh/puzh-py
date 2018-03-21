@@ -4,7 +4,7 @@ python:
 
 before_script:
   - pip install pep8
-  - python setup.py install
+  - pip install .
 script:
   - pep8 --max-line-length=99 puzh tests setup.py
   - python -m unittest
