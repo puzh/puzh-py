@@ -3,10 +3,10 @@ puzh
 
 |Build Status| |PyPI version|
 
-**puzh** is a simple wrapper package for the `puzh.it <https://puzh.it>` api. It supports
+**puzh** is a simple wrapper package for the `puzh.it <https://puzh.it>`__ api. It supports
 **python 3.x**.
 
-You can easily push messages to the telegram `@puzhbot <https://t.me/puzhbot>`
+You can easily push messages to the telegram `@puzhbot <https://t.me/puzhbot>`__.
 
 
 Install
@@ -33,10 +33,10 @@ API
 puzh.\ ``it(*objects, token='secret', silent=False, sep=' ')``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Push a message to the telegram `@puzhbot <https://t.me/puzhbot>`. Using ``silent=True`` will send
-the message silently. Users will receive a notification with no sound.
+Push a message to the telegram `@puzhbot <https://t.me/puzhbot>`__. Using ``silent=True`` will send
+the message silently. Users will receive a notification without sound.
 
-Messages can be formatted using `Markdown <https://core.telegram.org/bots/api#markdown-style>`.
+Messages can be formatted using `Markdown <https://core.telegram.org/bots/api#markdown-style>`__.
 Multiple arguments will be separated by ``sep``, a space by default.
 
 The method is executed asynchronously, if it fails, it will swallow any exception silently.
