@@ -44,5 +44,5 @@ The method is executed asynchronously, if it fails, it will swallow any exceptio
 
 .. |Build Status| image:: https://travis-ci.org/puzh/puzh.py.svg?branch=master
     :target: https://travis-ci.org/puzh/puzh.py
-.. |PyPI version| image:: https://img.shields.io/pypi/v/puzh.py.svg
+.. |PyPI version| image:: https://img.shields.io/pypi/v/puzh.svg
     :target: https://pypi.org/project/puzh
