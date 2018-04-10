@@ -1,7 +1,7 @@
 import threading
 
 
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 
 def it(*objects, token='secret', silent=False, sep=' '):

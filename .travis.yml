@@ -1,5 +1,6 @@
 language: python
 python:
+  - 3.5
   - 3.6
 
 cache: pip
@@ -17,3 +18,6 @@ deploy:
     user: lmittmann
     password:
         secure: iGagS/iejoifRpXFuM0gy0Jhd5J1hqAr27Fv6KHbJsz4TPfjRjsTKn/Vo09ZZrR4aboOQpmiiHNY8+JMbJCQKPfBAmVwTZwaDm+tgDT0bj70hY49cVSQ9+CUm7nWS2KZs2y361hUTp22O/LnVixeXI6S6blOzvkLiSWbWbInS+TM2XjPoNgheoTMuTLq7GguUSxYBzrP+vokLf+tggbNshpjzFD5EgJA67dKomDzMouPd8TxvcCQy7pHxfW+ZLKgu9nsnYbJ7K+RuziJIen1Ji59PamCQjXTZUB0lFUlX0Tx3zqoi6/TAVmv2jN85Lv/aaBKMlOaf/MOjktUH0fPLZhyQXfx9wACODY5o6TABrshtIij1hkN/j7HFSVIG3uB1EwC4B8S4SJasKBlXIznx1A5JW7fX+kiuyWXG3WAA5L69663zgKKjmc3irUSRTzhyo4KFePQcClHaCr8eyO5npFIoct9gfcAKUBfh/PwVngh6dcUShYtEuaLMcjmFTP2rL3JMI8CIdgoCRRArVw2DJaWlbB3K7uMh3x4dHnXVUNqqooMaNpgmKIoCrHy9FagETQL8KMMJYBMazn2sbkfDl+1s6L4fuaYQf95KwamoU2/c/YN2ivBhJYPqVn24XDLf4zy2X4WpGMgGpewtj7nCyn8jXBm2e3g7gNQLfo7ENk=
+    on:
+        branch: master
+        python: 3.6

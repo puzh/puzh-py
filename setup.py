@@ -15,4 +15,11 @@ setup(name='puzh',
       url='https://github.com/puzh/puzh.py',
       license='MIT',
       python_requires='>=3',
-      install_requires=['requests>=2.4.2'])
+      install_requires=['requests>=2.4.2'],
+      classifiers=['Development Status :: 4 - Beta',
+                   'Intended Audience :: Developers',
+                   'License :: OSI Approved :: MIT License',
+                   'Natural Language :: English',
+                   'Programming Language :: Python :: 3',
+                   'Programming Language :: Python :: 3.5',
+                   'Programming Language :: Python :: 3.6']))
