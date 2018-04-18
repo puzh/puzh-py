@@ -1,10 +1,10 @@
 import threading
 
 
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 
 
-def it(*objects, token='secret', silent=False, sep=' '):
+def it(*objects, token='', silent=False, sep=' '):
     import requests
 
     if type(token) is not str or token is None:
@@ -17,9 +17,9 @@ def it(*objects, token='secret', silent=False, sep=' '):
     payload = {
         'token': token,
         'text': sep.join(objects),
-        'silent': silent,
+        'silent': str(silent).lower(),
     }
     thread = threading.Thread(target=requests.post,
                               args=('https://api.puzh.it',),
-                              kwargs=dict(json=payload, timeout=16))
+                              kwargs=dict(json=payload, timeout=60))
     thread.start()
