@@ -22,16 +22,24 @@ Usage
 
 .. code:: py
 
+    # Simple usage
     import puzh
 
     puzh.it('*Hi* ✌', token='secret_token')
 
 
+    # Advanced usage
+    from puzh.puzh import Puzh
+
+    puzh = Puzh('secret_token')
+    puzh.it('*Hi* ✌')
+
+
 API
 ---
 
-puzh.\ ``it(*objects, token='secret', silent=False, sep=' ')``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+puzh.\ ``it(*objects, token=None, silent=False, sep=' ')``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Push a message to the telegram `@puzhbot <https://t.me/puzhbot>`__. Using ``silent=True`` will send
 the message silently. Users will receive a notification without sound.
