@@ -5,7 +5,7 @@ from puzh.puzh import Puzh
 
 try:
     __version__ = pkg_resources.get_distribution('puzh').version
-except:
+except Exception:
     __version__ = 'unknown'
 
 _puzh = None
