@@ -1,4 +1,13 @@
-__version__ = '1.1.1'
+import os
+import pkg_resources
+
+from puzh.puzh import Puzh
+
+try:
+    __version__ = pkg_resources.get_distribution('puzh').version
+except:
+    __version__ = 'unknown'
+
 _puzh = None
 
 
@@ -6,7 +15,6 @@ def it(*objects, token=None, silent=False, sep=' '):
     global _puzh
 
     if _puzh is None:
-        from puzh.puzh import Puzh
         _puzh = Puzh(None)
 
     _puzh.it(*objects, token=token, silent=silent, sep=sep)

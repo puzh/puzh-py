@@ -23,9 +23,6 @@ class Puzh:
             silent=str(silent).lower(),
         )
         thread = threading.Thread(target=requests.post,
-                                  # args=('https://api.puzh.it',),
-                                  args=(
-                                    'https://us-central1-api-puzh-it.cloudfunctions.net/push',
-                                  ),
+                                  args=('https://api.puzh.it',),
                                   kwargs=dict(json=payload, timeout=60))
         thread.start()

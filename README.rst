@@ -29,7 +29,7 @@ Usage
 
 
     # Advanced usage
-    from puzh.puzh import Puzh
+    from puzh import Puzh
 
     puzh = Puzh('secret_token')
     puzh.it('*Hi* ✌')
