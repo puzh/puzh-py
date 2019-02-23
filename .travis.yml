@@ -10,10 +10,9 @@ before_script:
 script:
 - pycodestyle puzh tests setup.py
 - python -m unittest
-
-before_deploy:
 - export VERSION=$(python -c "import puzh;print(puzh.__version__)")
 - export PYPI_VERSION=$(curl -s https://pypi.org/pypi/puzh/json | jq -r .info.version)
+
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
