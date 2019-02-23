@@ -13,6 +13,8 @@ script:
 after_script:
 - VERSION=$(python -c "import puzh;print(puzh.__version__)")
 - PYPI_VERSION=$(curl -s https://pypi.org/pypi/puzh/json | jq -r .info.version)
+- echo $VERSION
+- echo $PYPI_VERSION
 
 deploy:
   provider: pypi
