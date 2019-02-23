@@ -15,6 +15,7 @@ after_script:
 - PYPI_VERSION=$(curl -s https://pypi.org/pypi/puzh/json | jq -r .info.version)
 - echo $VERSION
 - echo $PYPI_VERSION
+- echo $(printf "$VERSION\n$PYPI_VERSION" | sort -V | head -n 1) != $VERSION
 
 deploy:
   provider: pypi
